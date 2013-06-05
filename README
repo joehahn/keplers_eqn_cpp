@@ -1,0 +1,19 @@
+README
+by Joe Hahn, jhahn@spacescience.org, 4 June 2013.
+
+This collection of codes has several goals. 1. I am a newcomer to C++
+and OOP, so one purpose of this exercise is to stretch out some new (and hopefully
+not too feeble) programming muscles. 2. Write and make available a code
+that solves Kepler's equation numerically in C++. Hopefully others will
+find this little code useful, see Orbit.cpp for a more detailed description of
+that solver. 3. I've also written this code in Java and IDL, and I've benchmarked
+all three codes; those other codes are uploaded to my github repositories at
+https://github.com/joehahn?tab=repositories . All three codes solve
+Kepler's equation for the eccentric anomaly E with errors < 10^(-15) radians
+for N=10^7 elliptic orbits that have eccentricities logarithmically
+distributed between 10^(-6)<e<0.999999. All three codes are executed on my
+6 year old Dell Precision T3400. This C++ code executes in 4.25 seconds while
+the Java code runs in 7.51 seconds and IDL takes 8.33 seconds to execute, so
+the Java code is 1.8 times slower than the C++ equivalent and the IDL code is
+2.0 times slower than C++.
+
